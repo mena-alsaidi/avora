@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AVORA | Luxury Fashion</title>
+
+    <meta name="description" content="Discover the latest luxury fashion collections for women and men at AVORA.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="fa1.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        FREE SHIPPING ON ORDERS OVER $100
+        <span> | </span>
+        DISCOVER THE NEW COLLECTION
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="#" class="logo">AVORA<span>.</span></a>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <button id="searchButton" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="header-icons">
+            <button aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </button>
+
+            <button aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishlistCount">0</span>
+            </button>
+
+            <button id="cartButton" aria-label="Shopping bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-link active" data-filter="all">HOME</a>
+        <a href="#new-arrivals" class="nav-link">NEW IN</a>
+        <a href="#women" class="nav-link" data-filter="women">WOMEN</a>
+        <a href="#men" class="nav-link" data-filter="men">MEN</a>
+        <a href="#categories" class="nav-link">CLOTHING</a>
+        <a href="#categories" class="nav-link">ACCESSORIES</a>
+        <a href="#sale" class="nav-link sale-link">SALE</a>
+    </nav>
+    
+<section class="hero">
+
+        <div class="hero-content">
+            <p class="hero-subtitle">THE NEW SEASON IS HERE</p>
+
+            <h1>Style is a way<br>to say who you are.</h1>
+
+            <p class="hero-description">
+                Discover timeless pieces and redefine your everyday style.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#women" class="btn btn-light" data-filter="women">
+                    SHOP WOMEN
+                </a>
+
+                <a href="#men" class="btn btn-outline">
+                    SHOP MEN
+                </a>
+            </div>
+        </div>
+
+    </section>/
+
+    <!-- Categories -->
+    <section class="categories section" id="categories">
+
+        <div class="section-heading">
+            <p>EXPLORE AVORA</p>
+            <h2>Shop by Category</h2>
+        </div>
+
+        <div class="category-grid">
+
+            <a href="#women" class="category-card" data-filter="women">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700" alt="Women's fashion">
+                <div class="category-overlay">
+                    <h3>WOMEN</h3>
+                    <span>EXPLORE COLLECTION <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#men" class="category-card" data-filter="men">
+                <img src="imag man/6m.jpg" alt="Men's fashion">
+                <div class="category-overlay">
+                    <h3>MEN</h3>
+                    <span>EXPLORE COLLECTION <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="#new-arrivals" class="category-card">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700" alt="Fashion accessories">
+                <div class="category-overlay">
+                    <h3>NEW ARRIVALS</h3>
+                    <span>DISCOVER MORE <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="products-section section" id="new-arrivals">
+
+        <div class="section-heading">
+            <p>JUST LANDED</p>
+            <h2>New Arrivals</h2>
+            <span>Discover the latest pieces from AVORA.</span>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="women">WOMEN</button>
+            <button class="filter-btn" data-filter="men">MEN</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <!-- Products generated by JavaScript -->
+        </div>
+
+        <button class="view-all" id="viewAll">
+            VIEW ALL PRODUCTS <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </section>
+
+    <!-- Women Banner -->
+    <section class="collection-banner women-banner" id="women">
+
+        <div class="banner-content">
+            <p>EFFORTLESS ELEGANCE</p>
+            <h2>For Every<br>Version of You.</h2>
+            <span>Discover the AVORA Women Collection.</span>
+            <button class="banner-btn" data-filter="women">
+                SHOP WOMEN
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Men Banner -->
+    <section class="collection-banner men-banner" id="men">
+
+        <div class="banner-content">
+            <p>CONFIDENCE IN EVERY DETAIL</p>
+            <h2>Own Your<br>Style.</h2>
+            <span>Discover the AVORA Men Collection.</span>
+            <button class="banner-btn" data-filter="men">
+                SHOP MEN
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Sale Section -->
+    <section class="sale-section section" id="sale">
+        <p>YOUR STYLE, YOUR MOMENT</p>
+        <h2>THE AVORA SALE</h2>
+        <span>UP TO 50% OFF SELECTED STYLES</span>
+        <a href="#new-arrivals" class="sale-button">SHOP NOW</a>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+
+        <div>
+            <p>STAY IN STYLE</p>
+            <h2>Join the AVORA World.</h2>
+            <span>Be the first to discover new collections and exclusive offers.</span>
+        </div>
+
+        <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Enter your email address" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <a href="#" class="logo">AVORA<span>.</span></a>
+                <p>
+                    Modern fashion. Timeless identity.
+                    Discover a style that speaks for you.
+                </p>
+            </div>
+
+            <div>
+                <h4>SHOP</h4>
+                <a href="#women">Women</a>
+                <a href="#men">Men</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#sale">Sale</a>
+            </div>
+
+            <div>
+                <h4>HELP</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">FAQs</a>
+                <a href="#">Size Guide</a>
+            </div>
+
+            <div>
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AVORA. MENA ALSAIDI </p>
+            <p>MADE FOR YOUR STYLE.</p>
+        </div>
+
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-drawer">
+
+            <div class="cart-header">
+                <h2>YOUR BAG</h2>
+                <button id="closeCart" aria-label="Close cart">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">Your bag is currently empty.</p>
+            </div>
+
+            <div class="cart-footer">
+                <p>Total: <strong id="cartTotal">$0.00</strong></p>
+                <button class="checkout-btn" id="checkoutButton">
+                    PROCEED TO CHECKOUT
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+   <script src="fa1.js"></script>
+
+</body>
+</html>
